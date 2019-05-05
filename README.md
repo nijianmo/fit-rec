@@ -1,7 +1,7 @@
 ### Code for our WWW 19' paper 
-- Modeling Heart Rate and Activity Data for Personalized Fitness Recommendation
+ - Jianmo Ni, Larry Muhlstein, Julian McAuley, "Modeling heart rate and activity data for personalized fitness recommendation", in Proc. of the 2019 World Wide Web Conference (WWW'19), San Francisco, US, May. 2019.
 
-You can find the data at here: https://sites.google.com/eng.ucsd.edu/fitrec-project/home. To run the code below, you need to first download the data files.
+You can find the data at here: https://sites.google.com/eng.ucsd.edu/fitrec-project/home. To run the code below, you need to first download the data files. Please cite our paper if you find the code and data helpful.
 
 ### FitRec
 This is the code for the workout profile prediction task. Data file you need: [processed_endomondHR_proper.npy](https://drive.google.com/open?id=12ymlWEcKhVuQ3syNb92zVMmowAsZwSZ4).
