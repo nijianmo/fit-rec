@@ -516,10 +516,7 @@ class da_rnn:
         self.context_encoder_optimizer.step()
         self.decoder_optimizer.step()
 
-        # if loss.data[0] < 10:
-        #     self.logger.info("MSE: %s, loss: %s.", loss.data, (y_pred[:, 0] - y_true).pow(2).mean())
-
-        return loss.data[0]
+        return loss.data.item()
 
     def evaluate(self, attr_inputs, context_input_1, context_input_2, input_variable, y_history, y_target):
         self.encoder.eval()
@@ -532,7 +529,7 @@ class da_rnn:
         
         loss = self.loss_func(y_pred, y_target)
 
-        return loss.data[0]
+        return loss.data.item()
     
     
     def predict(self, on_train = False):
