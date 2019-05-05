@@ -59,8 +59,8 @@ class keras_endoLSTM(object):
     def __init__(self, args, newModel):
 
         if newModel:
-            self.model_save_location = "./model_states/"
-            self.summaries_dir = path + "./logs/"
+            self.model_save_location = "./fitrec/model_states/"
+            self.summaries_dir = path + "./fitrec/logs/"
             self.data_path = "endomondoHR_proper.json"
             self.trainValidTestFN = self.data_path.split(".")[0] + "_temporal_dataset.pkl"
 
